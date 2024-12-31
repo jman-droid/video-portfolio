@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Portfolio</title>
+    <style>
+        :root {
+            --cream: #f5f5dc;
+            --blue: #001f3f;
+            --red: #ff4136;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--cream);
+            color: var(--blue);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--blue);
+            color: var(--cream);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--blue);
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--red);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .gallery-item {
+            border: 1px solid var(--blue);
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            background: var(--cream);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            display: block;
+        }
+
+        footer {
+            background-color: var(--blue);
+            color: var(--cream);
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Video Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="placeholder.jpg" alt="Video Thumbnail">
+                <h2>Video Title</h2>
+            </div>
+            <div class="gallery-item">
+                <img src="placeholder.jpg" alt="Video Thumbnail">
+                <h2>Video Title</h2>
+            </div>
+            <!-- Additional items can be added dynamically -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Video Portfolio</p>
+    </footer>
+</body>
+</html>

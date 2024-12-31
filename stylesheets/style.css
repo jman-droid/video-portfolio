@@ -1,0 +1,120 @@
+html {
+	background-color: rgb(253, 243, 229);
+}
+
+@font-face {
+		font-family: 'Edmondsans';
+		src: url('../fonts/EdmondsansRegular_web.ttf');
+		font-weight: lighter;
+		font-style: normal;
+}
+
+@font-face {
+	font-family: 'Edmondsans';
+	src: url('../fonts/EdmondsansMedium_web.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Edmondsans';
+	src: url('../fonts/EdmondsansBold_web.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+body {
+	box-sizing: border-box;
+	font-family: 'Edmondsans';
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h3, a {
+	color: rgb(43, 49, 120);
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+p{
+	font-weight: normal;
+	color: rgb(43, 49, 120);
+
+}
+
+h2 {
+	color: rgba(217, 58, 52);
+	font-weight: bold;
+	text-transform: uppercase;
+}
+header {
+	margin-top: 35px;
+}
+
+
+.video-thumbnail {
+	display: flex;
+	padding: 2rem 2rem 2rem 2rem;
+}
+
+.video-thumbnail img {
+	width: 445px;
+	height: 270.3px;
+	object-fit: cover;
+	border-radius: 4rem;
+}
+.about-intro {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.about-intro img {
+	height: 350px;
+	object-fit: cover;
+	border-radius: 4rem;
+}
+.about-text{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 50rem;
+}
+
+nav {
+	display: inline-block;
+	text-align:center;
+  font-size: 18px;
+  word-spacing: 15px;
+	width: 100%;
+
+}
+
+.video-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 3rem 0rem 3rem 0rem;
+
+}
+
+iframe {
+	border-radius: 1rem;
+
+}
+
+.wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+
+}
+
+footer {
+	max-height: 420px;
+	justify-content: center;
+	text-align: center;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
