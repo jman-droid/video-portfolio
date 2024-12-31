@@ -1,65 +1,90 @@
-        :root {
-            --cream: #f5f5dc;
-            --blue: #001f3f;
-            --red: #ff4136;
-        }
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: var(--cream);
-            color: var(--blue);
-            line-height: 1.6;
-        }
+/* Root Variables */
+:root {
+    --cream: #f5f5dc;
+    --blue: #001f3f;
+    --red: #ff4136;
+}
 
-        header {
-            background-color: var(--blue);
-            color: var(--cream);
-            padding: 1rem;
-            text-align: center;
-        }
+/* Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Added base font size */
+    background-color: var(--cream);
+    color: var(--blue);
+    line-height: 1.6;
+}
 
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin: 1rem 0;
-        }
+/* Header Styling */
+header {
+    background-color: var(--blue);
+    color: var(--cream);
+    padding: 1rem;
+    text-align: center;
+}
 
-        nav a {
-            text-decoration: none;
-            color: var(--blue);
-            font-weight: bold;
-        }
+/* Navigation Styling */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
 
-        nav a:hover {
-            color: var(--red);
-        }
+nav a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: bold;
+}
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            padding: 1rem;
-        }
+nav a:hover {
+    color: var(--red);
+}
 
-        .gallery-item {
-            border: 1px solid var(--blue);
-            border-radius: 5px;
-            overflow: hidden;
-            text-align: center;
-            background: var(--cream);
-        }
+nav a:focus {
+    outline: 2px solid var(--red); /* Added focus styling for accessibility */
+}
 
-        .gallery-item img {
-            width: 100%;
-            display: block;
-        }
+nav a:visited {
+    color: var(--blue); /* Optionally change color after link is visited */
+}
 
-        footer {
-            background-color: var(--blue);
-            color: var(--cream);
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
+/* Gallery Styling */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.gallery-item {
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    background: var(--cream);
+    margin-bottom: 1rem; /* Added margin for spacing between gallery items */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto; /* Ensures image maintains its aspect ratio */
+    display: block;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--blue);
+    color: var(--cream);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0; /* Prevents extra spacing at the bottom */
+}
