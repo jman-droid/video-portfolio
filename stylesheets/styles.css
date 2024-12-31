@@ -16,7 +16,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    font-size: 16px; /* Added base font size */
+    font-size: 16px;
     background-color: var(--cream);
     color: var(--blue);
     line-height: 1.6;
@@ -49,11 +49,11 @@ nav a:hover {
 }
 
 nav a:focus {
-    outline: 2px solid var(--red); /* Added focus styling for accessibility */
+    outline: 2px solid var(--red);
 }
 
 nav a:visited {
-    color: var(--blue); /* Optionally change color after link is visited */
+    color: var(--blue);
 }
 
 /* Gallery Styling */
@@ -70,13 +70,40 @@ nav a:visited {
     overflow: hidden;
     text-align: center;
     background: var(--cream);
-    margin-bottom: 1rem; /* Added margin for spacing between gallery items */
+    margin-bottom: 1rem;
 }
 
 .gallery-item img {
     width: 100%;
-    height: auto; /* Ensures image maintains its aspect ratio */
+    height: auto;
     display: block;
+}
+
+/* About and Contact Page Styling */
+.page-content {
+    max-width: 800px;
+    margin: 2rem auto; /* Center content */
+    padding: 1rem;
+    text-align: center; /* Center align for headings and text */
+    background: var(--cream);
+    border: 1px solid var(--blue);
+    border-radius: 8px;
+}
+
+.page-content img {
+    width: 200px; /* Set a consistent image size */
+    height: auto;
+    border-radius: 50%; /* Make images circular */
+    margin-bottom: 1rem; /* Add spacing below image */
+}
+
+.page-content h1, .page-content h2 {
+    margin-bottom: 1rem; /* Add spacing below headings */
+}
+
+.page-content p {
+    margin-bottom: 1rem; /* Add spacing between paragraphs */
+    line-height: 1.8; /* Slightly taller line height for readability */
 }
 
 /* Footer Styling */
@@ -86,5 +113,5 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-    margin-bottom: 0; /* Prevents extra spacing at the bottom */
+    margin-bottom: 0;
 }
