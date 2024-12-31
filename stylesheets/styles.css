@@ -106,6 +106,61 @@ nav a:visited {
     line-height: 1.8; /* Slightly taller line height for readability */
 }
 
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid var(--blue);
+    border-radius: 8px;
+    background-color: var(--cream);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--blue);
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical; /* Allows vertical resizing only */
+    height: 150px; /* Set default height */
+}
+
+form input:focus,
+form textarea:focus,
+form button:focus {
+    outline: 2px solid var(--red);
+    border-color: var(--red);
+}
+
+form button {
+    background-color: var(--blue);
+    color: var(--cream);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--red);
+}
+
+
 /* Footer Styling */
 footer {
     background-color: var(--blue);
