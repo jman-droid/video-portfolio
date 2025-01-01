@@ -1,5 +1,5 @@
 // Fetch the video data
-fetch('videos.json')
+fetch('data/videos.json')
   .then(response => response.json())
   .then(videos => {
     const gallery = document.getElementById('gallery');
@@ -9,9 +9,9 @@ fetch('videos.json')
       const videoCard = document.createElement('div');
       videoCard.classList.add('video-card');
       videoCard.innerHTML = `
+        <img src="${video.thumbnail}" alt="${video.title} Thumbnail">
         <h3>${video.title}</h3>
-        <p>${video.description}</p>
-        <a href="video.html?id=${video.id}">Watch Video</a>
+        <a href="pages/video.html?id=${video.id}">Watch Video</a>
       `;
       gallery.appendChild(videoCard);
     });

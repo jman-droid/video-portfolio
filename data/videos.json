@@ -1,0 +1,18 @@
+[
+  {
+    "id": "video1",
+    "title": "Demo Reel",
+    "description": "A reel of some recent work",
+    "platform": "YouTube",
+    "embedUrl": "https://www.youtube.com/embed/UC1SNRZHbbw",
+    "thumbnail": "https://img.youtube.com/vi/UC1SNRZHbbw/hqdefault.jpg"
+  },
+  {
+    "id": "video2",
+    "title": "Welcome to Tutta Bella",
+    "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
+    "platform": "Vimeo",
+    "embedUrl": "https://player.vimeo.com/video/935290369",
+    "thumbnail": "https://i.vimeocdn.com/video/1234567890_640x360.jpg" 
+  }
+]
