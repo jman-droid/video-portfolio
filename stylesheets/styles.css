@@ -7,35 +7,47 @@
 
 /* Root Variables */
 :root {
-    --cream: #f5f5dc;
-    --blue: #001f3f;
-    --red: #ff4136;
+    --cream: #fff3e3;
+    --blue: #2a317d;
+    --red: #ec2027;
 }
 
 /* Body Styling */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 16px;
-    background-color: var(--cream);
-    color: var(--blue);
+    background-color: whitesmoke;
     line-height: 1.6;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/BUFORDOpti/BUFORDOpti.ttf.woff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply the font */
+h1, .logo {
+    font-family: 'CustomFont', sans-serif;
 }
 
 /* Header Styling */
 header {
-    background-color: var(--blue);
+    background-color: black;
     color: var(--cream);
     padding: 1rem;
-    text-align: center;
+    text-align: left;
 }
 
 /* Navigation Styling */
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
     margin: 1rem 0;
+    padding-left: 1rem;
 }
 
 nav a {
@@ -59,51 +71,51 @@ nav a:visited {
 /* Gallery Styling */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     padding: 1rem;
 }
 
 .gallery-item {
     border: 1px solid var(--blue);
-    border-radius: 5px;
+    border-radius: 8px;
     overflow: hidden;
     text-align: center;
     background: var(--cream);
-    margin-bottom: 1rem;
 }
 
 .gallery-item img {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 8px; /* Ensure border radius applies to all sides */
 }
 
 /* About and Contact Page Styling */
 .page-content {
     max-width: 800px;
-    margin: 2rem auto; /* Center content */
+    margin: 2rem auto;
     padding: 1rem;
-    text-align: center; /* Center align for headings and text */
+    text-align: center;
     background: var(--cream);
     border: 1px solid var(--blue);
     border-radius: 8px;
 }
 
 .page-content img {
-    width: 200px; /* Set a consistent image size */
+    width: 200px;
     height: auto;
-    border-radius: 50%; /* Make images circular */
-    margin-bottom: 1rem; /* Add spacing below image */
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
 
 .page-content h1, .page-content h2 {
-    margin-bottom: 1rem; /* Add spacing below headings */
+    margin-bottom: 1rem;
 }
 
 .page-content p {
-    margin-bottom: 1rem; /* Add spacing between paragraphs */
-    line-height: 1.8; /* Slightly taller line height for readability */
+    margin-bottom: 1rem;
+    line-height: 1.8;
 }
 
 /* Form Styling */
@@ -136,8 +148,8 @@ form button {
 }
 
 form textarea {
-    resize: vertical; /* Allows vertical resizing only */
-    height: 150px; /* Set default height */
+    resize: vertical;
+    height: 150px;
 }
 
 form input:focus,
@@ -160,10 +172,96 @@ form button:hover {
     background-color: var(--red);
 }
 
+/* Center-align video container */
+#video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--cream);
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Video iframe styling */
+iframe {
+    width: 100%;
+    max-width: 750px;
+    height: 450px;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Heading and description styling */
+#video-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--blue);
+}
+
+#video-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--blue);
+    text-align: center;
+}
+
+/* Back to gallery link */
+#video-container a {
+    color: var(--cream);
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+#video-container a:hover {
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+/* Video card styling */
+.video-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.video-card:hover {
+    transform: scale(1.01);
+    opacity: 0.9;
+}
+
+/* Styling for video thumbnails */
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Ensure border radius applies to all sides */
+}
+
+/* Link styling for video titles */
+.video-link {
+    text-decoration: none;
+    color: var(--red);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.video-link:hover {
+    color: var(--blue);
+}
 
 /* Footer Styling */
 footer {
-    background-color: var(--blue);
+    background-color: black;
     color: var(--cream);
     text-align: center;
     padding: 1rem;

@@ -5,7 +5,8 @@
     "description": "A reel of some recent work",
     "platform": "YouTube",
     "embedUrl": "https://www.youtube.com/embed/UC1SNRZHbbw",
-    "thumbnail": "https://img.youtube.com/vi/UC1SNRZHbbw/hqdefault.jpg"
+    "thumbnail": "../images/gala-poster.png",
+    "date": "2023"
   },
   {
     "id": "video2",
@@ -13,6 +14,79 @@
     "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
     "platform": "Vimeo",
     "embedUrl": "https://player.vimeo.com/video/935290369",
-    "thumbnail": "https://i.vimeocdn.com/video/1234567890_640x360.jpg" 
+    "thumbnail": "../images/tutta-bella-thumb.jpg",
+    "date": "2024"
+  },
+  {
+    "id": "video3",
+    "title": "Gage Gala",
+    "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
+    "platform": "Vimeo",
+    "embedUrl": "https://player.vimeo.com/video/925106402",
+    "thumbnail": "../images/gage-gala-thumb.jpg",
+    "date": "2024"
+  },
+  {
+    "id": "video4",
+    "title": "Henry Gala",
+    "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
+    "platform": "Vimeo",
+    "embedUrl": "https://player.vimeo.com/video/935293630",
+    "thumbnail": "../images/henry-gala-thumb.jpg",
+    "date": "2024"
+  },
+  {
+    "id": "video5",
+    "title": "The Georgetown Imaginative Realism Atelier",
+    "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
+    "platform": "YouTube",
+    "embedUrl": "https://youtu.be/CZiL1io2VS8?feature=shared",
+    "thumbnail": "../images/gage-atelier-thumb.png",
+    "date": "2024"
+  },
+  {
+    "id": "video6",
+    "title": "Town Hall Seattle Gala",
+    "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
+    "platform": "Vimeo",
+    "embedUrl": "https://player.vimeo.com/video/932289721",
+    "thumbnail": "../images/ths-gala-24thumb.jpg",
+    "date": "2024"
+  },
+  {
+    "id": "video7",
+    "title": "Westerly Winds",
+    "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
+    "platform": "Vimeo",
+    "embedUrl": "https://player.vimeo.com/video/806193605",
+    "thumbnail": "../images/westerly-winds-thumb.jpg",
+    "date": "2024"
+  },
+  {
+    "id": "video8",
+    "title": "Ulysses' Hymn",
+    "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
+    "platform": "Vimeo",
+    "embedUrl": "https://player.vimeo.com/video/405618922",
+    "thumbnail": "../images/ulysses-hymn-thumb.jpg",
+    "date": "2024"
+  },
+  {
+    "id": "video9",
+    "title": "Could It Be That In This Kitchen",
+    "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
+    "platform": "Vimeo",
+    "embedUrl": "https://player.vimeo.com/video/333691119",
+    "thumbnail": "../images/could-it-be-that-in-this-kitchen-thumb.jpg",
+    "date": "2024"
+  },
+  {
+    "id": "video10",
+    "title": "This Is It",
+    "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
+    "platform": "Vimeo",
+    "embedUrl": "https://player.vimeo.com/video/336453346",
+    "thumbnail": "../images/this-is-it-thumb.jpg",
+    "date": "2024"
   }
 ]
