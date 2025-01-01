@@ -1,5 +1,5 @@
 // Fetch the video data
-fetch('data/videos.json')
+fetch('../data/videos.json')
   .then(response => response.json())
   .then(videos => {
     const gallery = document.getElementById('gallery');
