@@ -1,76 +1,88 @@
-@font-face {
-  font-family: "SpaceGrotesk";
-  src: url("../fonts/space-grotesk/SpaceGrotesk-Regular.woff2") format("woff2"), url("../fonts/space-grotesk/SpaceGrotesk-Regular.woff") format("woff");
-  font-weight: "Regular";
-  font-style: normal;
+// Variables
+$black: #000000;
+$gray: #808080;
+$white: #ffffff;
+$font-path: '../fonts/space-grotesk/';
+$font-family: 'SpaceGrotesk';
+
+// Mixin to handle font-face declarations
+@mixin font-face($weight, $style: normal) {
+  @font-face {
+    font-family: $font-family;
+    src: url('#{$font-path}SpaceGrotesk-#{$weight}.woff2') format('woff2'),
+         url('#{$font-path}SpaceGrotesk-#{$weight}.woff') format('woff');
+    font-weight: $weight;
+    font-style: $style;
+  }
 }
+
+// Include the mixin for all font weights/styles
+@include font-face('Regular');
+@include font-face('Bold');
+@include font-face('Semi-Bold');
+@include font-face('Italic', 'italic');
+
 @font-face {
-  font-family: "SpaceGrotesk";
-  src: url("../fonts/space-grotesk/SpaceGrotesk-Bold.woff2") format("woff2"), url("../fonts/space-grotesk/SpaceGrotesk-Bold.woff") format("woff");
-  font-weight: "Bold";
-  font-style: normal;
-}
-@font-face {
-  font-family: "SpaceGrotesk";
-  src: url("../fonts/space-grotesk/SpaceGrotesk-Semi-Bold.woff2") format("woff2"), url("../fonts/space-grotesk/SpaceGrotesk-Semi-Bold.woff") format("woff");
-  font-weight: "Semi-Bold";
-  font-style: normal;
-}
-@font-face {
-  font-family: "SpaceGrotesk";
-  src: url("../fonts/space-grotesk/SpaceGrotesk-Italic.woff2") format("woff2"), url("../fonts/space-grotesk/SpaceGrotesk-Italic.woff") format("woff");
-  font-weight: "Italic";
-  font-style: "italic";
-}
-@font-face {
-  font-family: "CustomFont";
-  src: url("../fonts/BUFORDOpti/BUFORDOpti.ttf.woff") format("truetype");
+  font-family: 'CustomFont';
+  src: url('../fonts/BUFORDOpti/BUFORDOpti.ttf.woff') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
+
+// Universal Reset
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
+// Body Styling
 body {
   margin: 0;
-  font-family: "SpaceGrotesk", Helvetica, sans-serif;
+  font-family: $font-family, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1,h2,h3 {
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: uppercase ;
+  
 }
-
 .logo {
-  font-family: "CustomFont", sans-serif;
+  font-family: 'CustomFont', sans-serif;
   color: black;
   font-size: 125px;
-}
-.logo:hover {
-  color: red;
+
+   &:hover {
+    color: red;
+  }
 }
 
+// Header Styling
 header {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: center; // Center items horizontally
+  justify-content: center; // Center items vertically
   text-align: center;
   background-color: white;
   color: black;
   padding: 1rem;
   z-index: 1;
   border-bottom: solid black 1px;
-}
-header a {
-  text-decoration: none;
+
+
+  a {
+    text-decoration: none;
+  }
+  
 }
 
+
+// Navigation Styling
 nav {
   display: flex;
   justify-content: space-between;
@@ -79,62 +91,72 @@ nav {
   top: 100px;
   left: 0;
   width: 100%;
-}
-nav a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 30px;
-}
-nav a:hover {
-  color: red;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+
+    &:hover {
+      color: red;
+    }
+  }
 }
 
+// Main Content Styling
 main {
   padding: 1rem;
   background-color: white;
 }
 
+// Gallery Styling
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); // Default: 4 items per row
   gap: 1rem;
   padding: 1rem;
+
+  .video-card {
+    position: relative; // Make sure it's positioned relative so that the title can be positioned absolutely within it
+    aspect-ratio: 1 / 1; // Makes the items square
+    overflow: hidden;
+    text-align: center;
+    background: $gray;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: filter 0.3s ease, transform 0.3s ease; // Smooth hover effect
+
+      &:hover {
+        filter: brightness(50%); // Darkens the image
+      }
+    }
+
+    .video-title {
+      position: absolute;
+      bottom: 45%; // Positioned 10% from the bottom of the container
+      left: 50%;
+      transform: translateX(-50%); // Centers the title horizontally
+      color: white;
+      padding: 0.5rem 1rem;
+      font-family: $font-family;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: bold;
+      opacity: 0; // Initially hidden
+      pointer-events: none; // Ensures the title doesn't block hover actions
+      transition: opacity 0.3s ease; // Smooth fade-in effect
+    }
+
+    &:hover .video-title {
+      opacity: 1; // Show title on hover
+    }
+  }
 }
-.gallery .video-card {
-  position: relative;
-  aspect-ratio: 1/1;
-  overflow: hidden;
-  text-align: center;
-  background: #808080;
-}
-.gallery .video-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: filter 0.3s ease, transform 0.3s ease;
-}
-.gallery .video-card img:hover {
-  filter: brightness(50%);
-}
-.gallery .video-card .video-title {
-  position: absolute;
-  bottom: 45%;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  padding: 0.5rem 1rem;
-  font-family: "SpaceGrotesk";
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: bold;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-.gallery .video-card:hover .video-title {
-  opacity: 1;
-}
+
 
 /* About and Contact Page Styling */
 .page-content {
@@ -146,6 +168,7 @@ main {
   background: whitesmoke;
   background-color: black;
   box-shadow: 25px 25px 0px rgb(255, 0, 0);
+  
 }
 
 .page-content img {
@@ -200,7 +223,7 @@ form button:focus {
 }
 
 form button {
-  background-color: black;
+  background-color:black;
   color: whitesmoke;
   font-weight: bold;
   cursor: pointer;
@@ -262,21 +285,26 @@ iframe {
   color: black;
 }
 
-@media (max-width: 1024px) {
+// Responsive Design
+@media (max-width: 1024px) { // Tablet
   .gallery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); // 3 items per row
   }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 768px) { // Mobile
   .gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); // 2 items per row
   }
 }
-@media (max-width: 480px) {
+
+@media (max-width: 480px) { // Small Mobile
   .gallery {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr); // 1 item per row
   }
 }
+
+// Footer Styling
 footer {
   background-color: white;
   color: black;
@@ -319,4 +347,9 @@ footer {
   font-size: inherit;
 }
 
-/*# sourceMappingURL=styles.css.map */
+
+
+
+
+
+

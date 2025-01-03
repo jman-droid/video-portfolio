@@ -9,10 +9,10 @@ fetch('../data/videos.json')
     const videoCard = document.createElement('div');
     videoCard.classList.add('video-card');
     videoCard.innerHTML = `
-      <a href="pages/video.html?id=${video.id}" class="video-link">
-        <img src="${video.thumbnail}" alt="${video.title}" class="video-thumbnail">
-      </a>
-      <h3><a href="pages/video.html?id=${video.id}" class="video-link">${video.title}</a></h3>
+      <a href="pages/video.html?id=${video.id}">
+          <img src="${video.thumbnail}" alt="${video.title}" class="video-thumbnail">
+        </a>
+        <div class="video-title">${video.title}</div>
     `;
     gallery.appendChild(videoCard);
   });

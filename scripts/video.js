@@ -14,7 +14,7 @@ fetch('../data/videos.json') // Adjust the path as per your file structure
         <h1>${video.title}</h1>
         <iframe src="${video.embedUrl}" frameborder="0" allowfullscreen></iframe>
         <p>${video.description}</p>
-        <a href="../index.html">Back to Gallery</a>
+        
       `;
     } else {
       videoContainer.innerHTML = `<p>Video not found.</p>`;
