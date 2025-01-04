@@ -1,4 +1,31 @@
-[
+[  
+  {
+    "id": "video01",
+    "title": "Potato Croissant",
+    "description": "Role: Editor",
+    "platform": "YouTube",
+    "embedUrl": "https://www.youtube.com/embed/ZRzwRw4Z6KM",
+    "thumbnail": "../images/potato-croissant.jpg",
+    "date": "2023"
+  },
+  {
+    "id": "video02",
+    "title": "Lionshead Meatballs",
+    "description": "A reel of some recent work",
+    "platform": "YouTube",
+    "embedUrl": "https://www.youtube.com/embed/a6xeVJRFy38",
+    "thumbnail": "../images/lionshead-meatballs.jpg",
+    "date": "2023"
+  },
+  {
+    "id": "video04",
+    "title": "Butterball Chicken",
+    "description": "A reel of some recent work",
+    "platform": "YouTube",
+    "embedUrl": "https://www.youtube.com/embed/dQ5VqmLoO1s",
+    "thumbnail": "../images/butterball-chicken.jpg",
+    "date": "2023"
+  },
   {
     "id": "video1",
     "title": "Demo Reel",
@@ -59,7 +86,7 @@
     "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
     "platform": "Vimeo",
     "embedUrl": "https://player.vimeo.com/video/806193605",
-    "thumbnail": "../images/westerly-winds-thumb.jpg",
+    "thumbnail": "../images/westerly-winds.png",
     "date": "2024"
   },
   {
@@ -68,7 +95,7 @@
     "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
     "platform": "Vimeo",
     "embedUrl": "https://player.vimeo.com/video/405618922",
-    "thumbnail": "../images/ulysses-hymn-thumb.jpg",
+    "thumbnail": "../images/ulysses-hymn-poster.png",
     "date": "2024"
   },
   {
@@ -77,7 +104,7 @@
     "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
     "platform": "Vimeo",
     "embedUrl": "https://player.vimeo.com/video/333691119",
-    "thumbnail": "../images/could-it-be-that-in-this-kitchen-thumb.jpg",
+    "thumbnail": "../images/thumbnails/could-it-be-poster.png",
     "date": "2024"
   },
   {
@@ -86,7 +113,25 @@
     "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
     "platform": "Vimeo",
     "embedUrl": "https://player.vimeo.com/video/336453346",
-    "thumbnail": "../images/this-is-it-thumb.jpg",
+    "thumbnail": "../images/this-is-it-poster.png",
+    "date": "2024"
+  },
+  {
+    "id": "video11",
+    "title": "Beyond Measure",
+    "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
+    "platform": "Vimeo",
+    "embedUrl": "https://player.vimeo.com/video/515923842",
+    "thumbnail": "../images/beyond-measure-thumb.jpg",
+    "date": "2024"
+  },
+  {
+    "id": "video12",
+    "title": "yMusic",
+    "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
+    "platform": "Vimeo",
+    "embedUrl": "https://player.vimeo.com/video/405652794",
+    "thumbnail": "../images/ymusic-poster.png",
     "date": "2024"
   }
 ]
