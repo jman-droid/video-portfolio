@@ -133,5 +133,25 @@
     "embedUrl": "https://player.vimeo.com/video/405652794",
     "thumbnail": "../images/ymusic-poster.png",
     "date": "2024"
+  },
+  {
+    "id": "video12",
+    "title": "yMusic",
+    "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
+    "platform": "Vimeo",
+    "embedUrl": "https://player.vimeo.com/video/405652794",
+    "thumbnail": "../images/ymusic-poster.png",
+    "date": "2024"
+    
+  },
+  {
+    "id": "video13",
+    "title": "Potato Pavé",
+    "description": "I edited this Welcome video for Tutta Bella's new incoming staff. Director and DP - Brad Curran",
+    "platform": "YouTube",
+    "embedUrl": "https://www.youtube.com/embed/0jlN0cQp5TI",
+    "thumbnail": "../images/potato_pave_hero.jpg",
+    "date": "2024"
+    
   }
 ]
